@@ -36,7 +36,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  void _incrementCounter() {
+  void Plus() {
     setState(() {
       
       _counter++;
@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
     
   }
-    void _incrementReduce() {
+    void Minus() {
     setState(() {
       
       _counter--;
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
     
   }
 
-  void _incrementNull() {
+  void Null() {
     setState(() {
       
       _counter = 0;
@@ -94,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
       
       ),
       FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: Plus,
       backgroundColor: Color.fromARGB(255, 19, 214, 78),
         child: const Icon(
           Icons.add
@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
       
       ),
       FloatingActionButton(
-        onPressed: _incrementNull,
+        onPressed: Null,
         
         
         child: const Icon(
@@ -117,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
       
       ),
       FloatingActionButton(
-        onPressed: _incrementReduce,
+        onPressed: Minus,
        backgroundColor: Color.fromARGB(255, 216, 48, 48),
         child: const Icon(
           Icons.remove
